@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" ကားရေဆေး"</string>
+    <string name="email" translatable="true">အီးမေးလ်</string>
+    <string name="password">" စကားဝှက်"</string>
+    <string name="welcome_to">ကြိုဆိုပါတယ်</string>
+    <string name="sign_in">ဆိုင်းအင်လုပ်ခြင်း</string>
+    <string name="car_wash_company">ကားရေဆေးကုမ္ပဏီ</string>
+    <string name="dont_have_an_account">အကောင့်မရှိဘူး</string>
+    <string name="sign_up">မှတ်ပုံတင်မယ်</string>
+    <string name="comfirm_password">စကားဝှက်ကိုအတည်ပြုပါ</string>
+    <string name="already_have_an_account">အကောင့်ရှိပြီးသားလား</string>
+    <string name="slogan">ဆောင်ပုဒ်</string>
+
+
+</resources>
