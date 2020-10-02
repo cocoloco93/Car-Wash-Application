@@ -36,6 +36,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/colorAccent"
         android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textAlreadyAcc2"
         tools:ignore="RtlCompat" />
@@ -52,6 +53,7 @@
         android:textAlignment="textStart"
         android:textColor="#000000"
         android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="RtlCompat" />
@@ -153,6 +155,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/sign_up"
+        app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
         android:textColor="#A3000000"
         android:textSize="36sp"
@@ -174,6 +177,7 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:fontFamily="@font/segoeui"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textAlreadyAcc2"
         app:layout_constraintStart_toStartOf="parent" />

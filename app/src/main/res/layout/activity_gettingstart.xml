@@ -23,6 +23,7 @@
         android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/splashlogo"
+        app:fontFamily="@font/segoeui"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-95dp"
         android:textAllCaps="false"

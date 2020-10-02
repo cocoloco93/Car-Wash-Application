@@ -17,6 +17,7 @@
         android:drawablePadding="5dp"
         android:hint="**********"
         android:textSize="15sp"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
 
@@ -30,6 +31,7 @@
         android:layout_marginRight="30dp"
         android:text="@string/password"
         android:textColor="@color/bulecolor"
+
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtextGmail" />
@@ -45,6 +47,7 @@
         android:drawableLeft="@drawable/username"
         android:drawablePadding="5dp"
         android:gravity="center"
+        app:fontFamily="@font/segoeui"
         android:hint="abc@gmail.com"
         android:textAlignment="textStart"
         android:textSize="15sp"
@@ -61,6 +64,7 @@
         android:layout_marginTop="140dp"
         android:gravity="start"
         android:text="@string/email"
+
         android:textAlignment="textStart"
         android:textColor="@color/bulecolor"
         android:textSize="20sp"
@@ -80,6 +84,7 @@
         android:textColor="#A3000000"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlCompat" />
@@ -93,6 +98,7 @@
         android:textAlignment="textStart"
         android:textColor="#A3000000"
         android:textSize="35sp"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -115,6 +121,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toTopOf="@+id/textAlreadyAcc"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -131,6 +138,7 @@
         android:textAlignment="textStart"
         android:textColor="@color/colorAccent"
         android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textAlreadyAcc"
         tools:ignore="RtlCompat" />
@@ -147,6 +155,7 @@
         android:textAlignment="textStart"
         android:textColor="#000000"
         android:textSize="15sp"
+        android:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="RtlCompat" />

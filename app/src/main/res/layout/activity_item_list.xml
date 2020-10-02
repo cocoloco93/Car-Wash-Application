@@ -30,6 +30,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:text="@string/small_car"
+                app:fontFamily="@font/segoeui"
                 android:textAlignment="textStart"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
@@ -51,6 +52,7 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="@string/car_wash"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -67,6 +69,7 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Wash Premium"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -90,6 +93,7 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Polish Premium"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -106,6 +110,7 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Polish Standard"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -129,6 +134,7 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Interior Cleaning (Premium)"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -145,6 +151,7 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Coding (Premium)"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -159,6 +166,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:text="@string/medium_car"
+                app:fontFamily="@font/segoeui"
                 android:textAlignment="textStart"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
@@ -179,6 +187,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="Car Wash Preminum"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary">
 
@@ -192,6 +201,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="Car Wash Preminum"
+                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary">
 
@@ -398,6 +408,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:text="@string/Item_list"
+        app:fontFamily="@font/segoeui"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="25sp"
@@ -427,6 +438,7 @@
         android:background="@drawable/rounded_buttom"
         android:ellipsize="none"
         android:text="@string/checkout"
+        app:fontFamily="@font/segoeui"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
