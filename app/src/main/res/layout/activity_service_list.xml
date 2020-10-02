@@ -27,7 +27,7 @@
     <TextView
         android:id="@+id/line12"
         style="?android:attr/listSeparatorTextViewStyle"
-        android:layout_width="350dp"
+        android:layout_width="335dp"
         android:layout_height="0.5dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"

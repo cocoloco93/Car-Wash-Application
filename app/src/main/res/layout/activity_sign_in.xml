@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/edtextPassword"
-        android:layout_width="351dp"
+        android:layout_width="335dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
@@ -27,6 +27,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
         android:text="@string/password"
         android:textColor="@color/bulecolor"
         android:textSize="20sp"
@@ -35,11 +36,12 @@
 
     <EditText
         android:id="@+id/edtextGmail"
-        android:layout_width="351dp"
+        android:layout_width="335dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
         android:drawableLeft="@drawable/username"
         android:drawablePadding="5dp"
         android:gravity="center"
