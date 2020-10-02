@@ -4,75 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ServiceList">
-
-
-    <Button
-        android:id="@+id/btmSetUp3"
-        android:layout_width="251dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/rounded_buttom"
-        android:ellipsize="none"
-        android:text="@string/checkout"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/line12"
-        style="?android:attr/listSeparatorTextViewStyle"
-        android:layout_width="350dp"
-        android:layout_height="0.5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:background="#707070"
-        android:gravity="center_horizontal"
-        android:paddingTop="5dip"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn32" />
-
-    <TextView
-        android:id="@+id/textforSignIn32"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/service_list"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/btmMenu7"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btmMenu7"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+    tools:context=".ItemList">
 
     <ScrollView
         android:layout_width="342dp"
         android:layout_height="420dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn32"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn41"
         tools:ignore="MissingConstraints">
         <!--1colom-->
         <LinearLayout
@@ -107,7 +50,7 @@
                     android:background="@drawable/gradient"
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
-                    android:text="Car Wash Standard"
+                    android:text="@string/car_wash"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -185,7 +128,7 @@
                     android:background="@drawable/gradient"
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
-                    android:text="Car Interior Cleaning"
+                    android:text="Car Interior Cleaning (Premium)"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -201,7 +144,7 @@
                     android:background="@drawable/gradient"
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
-                    android:text="Car Coding Premium"
+                    android:text="Car Coding (Premium)"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
                     android:textSize="15sp">
@@ -434,5 +377,75 @@
 
     </ScrollView>
 
+    <TextView
+        android:id="@+id/line15"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#707070"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn42"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/textforSignIn41"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Item_list"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btmMenu12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btmMenu12"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <Button
+        android:id="@+id/btmSetUp4"
+        android:layout_width="251dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_buttom"
+        android:ellipsize="none"
+        android:text="@string/checkout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/line15"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="350dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#707070"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn41"
+        tools:ignore="DuplicateIds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

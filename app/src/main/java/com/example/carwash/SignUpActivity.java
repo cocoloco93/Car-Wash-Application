@@ -27,7 +27,7 @@ public class SignUpActivity extends AppCompatActivity {
     ;
 
     private void moveToActivitySignUp() {
-        Intent intent = new Intent(SignUpActivity.this, SetUpActivity.class);
+        Intent intent = new Intent(SignUpActivity.this, WorkOperation.class);
         startActivity(intent);
     }
 }

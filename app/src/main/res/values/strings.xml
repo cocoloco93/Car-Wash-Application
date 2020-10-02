@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Auto ပိုက်ဆံ</string>
+    <string name="app_name">Auto FM</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="welcome_to">"Welcome "</string>
@@ -11,7 +11,7 @@
     <string name="already_have_an_account">Already have an account</string>
     <string name="slogan">Slogan</string>
     <string name="setup">Setup</string>
-    <string name="work_operation">Work Opeartion</string>
+    <string name="work_operation">Work Operation</string>
     <string name="shop_setup">Shop Setup</string>
     <string name="shop_setup_box">A little bit of words y users need to Setup Shop.A little bit of words y users need to  Setup Shop.</string>
     <string name="edit_shop">Edit Shop</string>
@@ -62,6 +62,11 @@
     <string name="checkout">Checkout</string>
     <string name="expense_checkout">Expense Checkout</string>
     <string name="small_car">Small Car</string>
+    <string name="Item_list">Item List</string>
+    <string name="medium_car">Medium Car</string>
+    <string name="suv_car">SUV Car</string>
+    <string name="input_data">Input Data</string>
+    <string name="service_list">Service List</string>
 
 
 </resources>

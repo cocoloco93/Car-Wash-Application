@@ -24,7 +24,7 @@ public class InputDataActivity extends AppCompatActivity {
         });
     };
     private void moveToActivityS(){
-        Intent intent =new Intent(InputDataActivity.this, ServiceCheckOut.class);
+        Intent intent =new Intent(InputDataActivity.this, Checkout.class);
         startActivity(intent);
     }
 

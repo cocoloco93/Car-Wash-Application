@@ -9,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InputDataActivity"></activity>
+        <activity android:name=".ItemList"></activity>
+        <activity android:name=".InputDataActivity" />
         <activity android:name=".ExpenseCheckout" />
         <activity android:name=".ExpenseData" />
-        <activity android:name=".ServiceCheckOut" />
+        <activity android:name=".Checkout" />
         <activity android:name=".ServiceList" />
         <activity android:name=".ServiceEdit" />
-        <activity android:name=".SetUpActivity" />
-        <activity android:name=".SignInActivity"/>
-        <activity android:name=".SignUpActivity"/>
-        <activity android:name=".OtherItemCreation"/>
-        <activity android:name=".ServiceCreation1"/>
-        <activity android:name=".ServiceCreation2"/>
+        <activity android:name=".WorkOperation" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".OtherItemCreation" />
+        <activity android:name=".ShopCreation" />
+        <activity android:name=".ServiceCreation" />
         <activity android:name=".GettingStartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

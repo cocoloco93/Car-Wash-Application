@@ -5,6 +5,7 @@
     <color name="colorAccent">#03CCAE</color>
     <color name="bulecolor">#54A7E7</color>
     <color name="secondary">#D9EFFF</color>
-    <color name="fontsecondary">#A4A4A4</color>
+    <color name="fontsecondary">#00BCD4</color>
+    <color name="black">#000000</color>
 
 </resources>

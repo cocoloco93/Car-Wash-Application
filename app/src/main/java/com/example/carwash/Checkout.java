@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ServiceCheckOut extends AppCompatActivity {
+public class Checkout extends AppCompatActivity {
     private Button b1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_check_out);
+        setContentView(R.layout.activity_check_out);
         b1 = (Button) findViewById(R.id.btmSetUp);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +27,7 @@ public class ServiceCheckOut extends AppCompatActivity {
     ;
 
     private void moveToActivityE() {
-        Intent intent = new Intent(ServiceCheckOut.this, ExpenseData.class);
+        Intent intent = new Intent(Checkout.this, ExpenseData.class);
         startActivity(intent);
     }
 }

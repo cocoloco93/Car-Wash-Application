@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class SetUpActivity extends AppCompatActivity implements View.OnClickListener {
+public class WorkOperation extends AppCompatActivity implements View.OnClickListener {
     private Button b1;
     private Button b2;
     private Button b3;
@@ -21,7 +21,7 @@ public class SetUpActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_up);
+        setContentView(R.layout.activity_work_operation);
         b1 = (Button) findViewById(R.id.btmEditShop);
         b2 = (Button) findViewById(R.id.btmCreatService);
         b3 = (Button) findViewById(R.id.btmEditService);
@@ -39,11 +39,11 @@ public class SetUpActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v){
         if(v==b1){
-            Intent b1Intent = new Intent(this,ServiceCreation1.class);
+            Intent b1Intent = new Intent(this, ShopCreation.class);
             startActivity(b1Intent);
         }
         else if (v==b2){
-            Intent b2Intent = new Intent(this,ServiceCreation2.class);
+            Intent b2Intent = new Intent(this, ServiceCreation.class);
             startActivity(b2Intent);
         }
         else if (v==b3){
@@ -55,11 +55,11 @@ public class SetUpActivity extends AppCompatActivity implements View.OnClickList
             startActivity(b4Intent);
         }
         else if (v==b5){
-            Intent b5Intent = new Intent(this,ServiceList.class);
+            Intent b5Intent = new Intent(this,ItemList.class);
             startActivity(b5Intent);
         }
         else if (v==i1){
-            Intent i1Intent = new Intent(this,InputDataActivity.class);
+            Intent i1Intent = new Intent(this, InputDataActivity.class);
             startActivity(i1Intent);
         }
         }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">" ကားရေဆေး"</string>
+    <string name="app_name">Auto FM</string>
     <string name="email" translatable="true">အီးမေးလ်</string>
     <string name="password">" စကားဝှက်"</string>
     <string name="welcome_to">ကြိုဆိုပါတယ်</string>
@@ -18,7 +18,7 @@
     <string name="edit_shop">ဆိုင်ပြင်ဆင်ရန်</string>
     <string name="service_creation">ဝန်ဆောင်မှုဖန်တီးမှု</string>
     <string name="service_creation_box">အသုံးပြုသူများသည်ဝန်ဆောင်မှုဖန်တီးရန်လိုအပ်သည့်စကားလုံးအနည်းငယ်သာရှိသည်။</string>
-    <string name="creat_service">ဝန်ဆောင်မှုဖန်တီးမှု</string>
+    <string name="creat_service">ဝန်ဆောင်မှုဖန်တီးရန်</string>
     <string name="edit_service">တည်းဖြတ်ဝန်ဆောင်မှု</string>
     <string name="other_items_creation">အခြားပစ္စည်းများဖန်တီးခြင်း</string>
     <string name="other_items_creation_box">အသုံးပြုသူများသည် ပစ္စည်းတွေ ဖန်တီးရန်လိုအပ်သည့်စကားလုံးအနည်းငယ်သာရှိသည်။</string>
@@ -63,6 +63,11 @@
     <string name="checkout">ငွေပေးချေမည်</string>
     <string name="expense_checkout">ကုန်ပစ္စည်းကုန်ကျစရိတ်</string>
     <string name="small_car">ကားသေးသေးလေး</string>
+    <string name="Item_list">ပစ္စည်းစာရင်း</string>
+    <string name="medium_car">အလတ်စားကားများ</string>
+    <string name="suv_car">SUV ကား</string>
+    <string name="input_data">အချက်အလက်များထည့်သွင်းရန်</string>
+    <string name="service_list">ဝန်ဆောင်မှုစာရင်း</string>
 
 
 </resources>

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ServiceCreation2 extends AppCompatActivity {
+public class ServiceCreation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_creation_2);
+        setContentView(R.layout.activity_service_creation);
     }
 }

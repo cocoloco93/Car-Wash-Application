@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="309dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-16dp"
+        android:layout_marginTop="0dp"
         android:contentDescription="TODO"
-        android:src="@drawable/car_wash"
+        android:src="@drawable/auto_fm_logo"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-2dp" />
 
@@ -25,7 +25,10 @@
         android:layout_alignBottom="@+id/splashlogo"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-95dp"
+        android:textAllCaps="false"
         android:textColor="#FFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:background="@drawable/rounded_buttom"
         android:text="Get Started" />
 
