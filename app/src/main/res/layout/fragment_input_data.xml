@@ -26,32 +26,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btmMenu5"
         tools:ignore="DuplicateIds" />
 
-    <ImageButton
-        android:id="@+id/btmMenu5"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
 
-    <TextView
-        android:id="@+id/textforSignIn31"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/input_data"
-        app:fontFamily="@font/segoeui"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/btmMenu5"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/line4"
@@ -87,7 +63,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn31"
+        app:layout_constraintTop_toBottomOf="@+id/line4"
         tools:ignore="RtlCompat" />
 
     <EditText
@@ -317,17 +293,18 @@
         android:layout_width="251dp"
         android:layout_height="43dp"
         android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_buttom"
         android:text="@string/checkout"
-        app:fontFamily="@font/segoeui"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:layout_width="43dp"

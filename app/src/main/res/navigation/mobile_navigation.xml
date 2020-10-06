@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_dashboard">
+
+
+    <!--Dashboard-->
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.carwash.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+    </fragment>
+
+    <!--Input Data-->
+    <fragment
+        android:id="@+id/nav_input_data"
+        android:name="com.example.carwash.ui.inputdata.InputDataFragment"
+        android:label="@string/menu_input_data"
+        tools:layout="@layout/activity_input_data">
+        <action
+            android:id="@+id/action_nav_input_data_to_nav_check_out"
+            app:destination="@id/nav_check_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_check_out"
+        android:name="com.example.carwash.ui.inputdata.CheckoutFragment"
+        android:label="@string/checkout"
+        tools:layout="@layout/fragment_check_out" />
+
+
+    <!--Expense Records-->
+    <fragment
+        android:id="@+id/nav_expense_records"
+        android:name="com.example.carwash.ui.expenserecords.ExpenseRecordsFragment"
+        android:label="@string/menu_expense_records"
+        tools:layout="@layout/fragment_expense_records" />
+
+
+    <!--Income Records-->
+    <fragment
+        android:id="@+id/nav_income_records"
+        android:name="com.example.carwash.ui.IncomeRecords.IncomeRecordsFragment"
+        android:label="@string/menu_income_records"
+        tools:layout="@layout/fragment_income_records" />
+
+
+    <!--Car Number Records-->
+    <fragment
+        android:id="@+id/nav_car_number_records"
+        android:name="com.example.carwash.ui.carnumberecords.CarNumberRecordsFragment"
+        android:label="@string/menu_car_number_record"
+        tools:layout="@layout/fragment_car_number_records" />
+
+
+    <!--Input Expense-->
+    <fragment
+        android:id="@+id/nav_input_expense"
+        android:name="com.example.carwash.ui.inputexpense.ExpenseDataFragment"
+        android:label="@string/menu_input_expense"
+        tools:layout="@layout/fragment_expense_data" >
+        <action
+            android:id="@+id/action_nav_input_expense_to_nav_expense_checkout"
+            app:destination="@id/nav_expense_checkout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_expense_checkout"
+        android:name="com.example.carwash.ui.inputexpense.ExpenseCheckoutFragment"
+        android:label="@string/expense_checkout"
+        tools:layout="@layout/fragment_expense_checkout" />
+
+
+    <!--Shop Info-->
+    <fragment
+    android:id="@+id/nav_shop_info"
+    android:name="com.example.carwash.ui.ShopInfo.WorkOperationFragment"
+    android:label="@string/menu_shop_info"
+    tools:layout="@layout/fragment_work_operation" />
+
+    <fragment
+        android:id="@+id/nav_shop_creation"
+        android:name="com.example.carwash.ui.ShopInfo.ShopCreationFragment"
+        android:label="@string/menu_shop_info"
+        tools:layout="@layout/activity_shop_creation" />
+
+    <fragment
+        android:id="@+id/nav_service_list"
+        android:name="com.example.carwash.ui.ShopInfo.ServiceListFragment"
+        android:label="@string/service_list"
+        tools:layout="@layout/fragment_service_list" />
+
+    <fragment
+        android:id="@+id/nav_service_edit"
+        android:name="com.example.carwash.ui.ShopInfo.ServiceEditFragment"
+        android:label="@string/service_edit"
+        tools:layout="@layout/fragment_service_edit" />
+
+    <fragment
+        android:id="@+id/nav_service_creation"
+        android:name="com.example.carwash.ui.ShopInfo.ServiceCreationFragment"
+        android:label="@string/service_creation"
+        tools:layout="@layout/fragment_service_creation" />
+
+
+    <fragment
+        android:id="@+id/nav_other_items_list"
+        android:name="com.example.carwash.ui.ShopInfo.OtherItemsListFragment"
+        android:label="@string/other_items_list"
+        tools:layout="@layout/fragment_other_items_list" />
+
+    <fragment
+        android:id="@+id/nav_other_items_creation"
+        android:name="com.example.carwash.ui.ShopInfo.OtherItemsCreationFragment"
+        android:label="@string/other_item_creation"
+        tools:layout="@layout/fragment_other_items_creation" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_sign_out"-->
+<!--        android:name="com.example.carwash.ui.auth.SignOutFragment"-->
+<!--        android:label="@string/sign_out"-->
+<!--        tools:layout="@layout/fragment_sign_out" />-->
+
+
+
+
+
+</navigation>
