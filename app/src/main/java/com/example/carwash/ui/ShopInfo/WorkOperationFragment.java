@@ -19,6 +19,8 @@ public class WorkOperationFragment extends Fragment implements View.OnClickListe
     private Button b_editservice;
     private Button b_createitem;
     private Button b_edititem;
+    private Button b_createmanager;
+    private Button b_editemanager;
 
     public WorkOperationFragment() {
     }
@@ -32,6 +34,8 @@ public class WorkOperationFragment extends Fragment implements View.OnClickListe
         b_editservice = (Button) root.findViewById(R.id.btmEditService);
         b_createitem = (Button) root.findViewById(R.id.btmCreatItem);
         b_edititem = (Button) root.findViewById(R.id.btmEditItem);
+        b_createmanager = (Button) root.findViewById(R.id.btmCreatManager);
+        b_editemanager = (Button) root.findViewById(R.id.btmEditManager);
 
 
         b_editshop.setOnClickListener(this);
@@ -39,6 +43,9 @@ public class WorkOperationFragment extends Fragment implements View.OnClickListe
         b_editservice.setOnClickListener(this);
         b_createitem.setOnClickListener(this);
         b_edititem.setOnClickListener(this);
+        b_createmanager.setOnClickListener(this);
+        b_editemanager.setOnClickListener(this);
+
 
         return root;
     }
@@ -63,6 +70,14 @@ public class WorkOperationFragment extends Fragment implements View.OnClickListe
         }
         else if (v==b_edititem){
             Navigation.findNavController(v).navigate(R.id.nav_other_items_list);
+
+        }
+        else if (v==b_createmanager) {
+            Navigation.findNavController(v).navigate(R.id.nav_manager_creation);
+
+        }
+        else if (v==b_editemanager) {
+            Navigation.findNavController(v).navigate(R.id.nav_manager_edit);
 
         }
     }

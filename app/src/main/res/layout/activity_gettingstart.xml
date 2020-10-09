@@ -23,15 +23,15 @@
         android:layout_width="188dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/splashlogo"
-        app:fontFamily="@font/segoeui"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-95dp"
+        android:layout_marginBottom="-185dp"
+        android:background="@drawable/rounded_buttom"
+        android:text="Get Started"
         android:textAllCaps="false"
         android:textColor="#FFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:background="@drawable/rounded_buttom"
-        android:text="Get Started" />
+        app:fontFamily="@font/segoeui" />
 
     <TextView
         android:id="@+id/textView4"

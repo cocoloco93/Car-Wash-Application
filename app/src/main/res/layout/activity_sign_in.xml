@@ -6,32 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".ui.auth.SignInActivity">
 
+
     <EditText
         android:id="@+id/edtextPassword"
         android:layout_width="335dp"
         android:layout_height="41dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
         android:drawableLeft="@drawable/password"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
         android:drawablePadding="5dp"
         android:hint="**********"
         android:textSize="15sp"
-
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
 
     <TextView
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="33dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="30dp"
+        android:fontFamily="@font/segoeui"
+        app:fontFamily="@font/pyidaungsu_"
         android:text="@string/password"
         android:textColor="@color/bulecolor"
-
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtextGmail" />
@@ -44,11 +45,15 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="30dp"
+        android:focusable="true"
+        android:maxLength="30"
+        android:ems="10"
+        android:inputType="text"
         android:drawableLeft="@drawable/username"
         android:drawablePadding="5dp"
         android:gravity="center"
         app:fontFamily="@font/segoeui"
-        android:hint="abc@gmail.com"
+        android:hint="abc@email.com"
         android:textAlignment="textStart"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,13 +63,13 @@
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="33dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="140dp"
+        android:fontFamily="@font/segoeui"
+        app:fontFamily="@font/pyidaungsu_"
         android:gravity="start"
         android:text="@string/email"
-
         android:textAlignment="textStart"
         android:textColor="@color/bulecolor"
         android:textSize="20sp"
@@ -74,17 +79,17 @@
     <TextView
         android:id="@+id/textSignIn"
         android:layout_width="wrap_content"
-        android:layout_height="55dp"
+        android:layout_height="58dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/sign_in"
         android:textAlignment="textStart"
-        android:textColor="#A3000000"
+        android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:fontFamily="@font/segoeui"
+        android:fontFamily="@font/segoeubold"
+        app:fontFamily="@font/pyidaungsu_bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlCompat" />
@@ -92,13 +97,14 @@
     <TextView
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
-        android:layout_height="43dp"
+        android:layout_height="63dp"
         android:gravity="center"
         android:text="@string/welcome_to"
         android:textAlignment="textStart"
-        android:textColor="#A3000000"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="35sp"
-        app:fontFamily="@font/segoeui"
+        android:fontFamily="@font/segoeubold"
+        app:fontFamily="@font/pyidaungsu_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -112,16 +118,16 @@
         android:layout_width="251dp"
         android:layout_height="43dp"
         android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/rounded_buttom"
         android:ellipsize="none"
+        android:fontFamily="@font/segoeui"
+        app:fontFamily="@font/pyidaungsu_"
         android:text="@string/sign_in"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toTopOf="@+id/textAlreadyAcc"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -131,17 +137,19 @@
         android:layout_height="29dp"
         android:layout_gravity="start"
         android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:layout_marginBottom="80dp"
         android:gravity="center"
         android:text="@string/sign_up"
         android:textAlignment="textStart"
         android:textColor="@color/colorAccent"
         android:textSize="15sp"
-        app:fontFamily="@font/segoeui"
+        android:fontFamily="@font/segoeubold"
+        app:fontFamily="@font/pyidaungsu_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textAlreadyAcc"
         tools:ignore="RtlCompat" />
+
+
 
     <TextView
         android:id="@+id/textAlreadyAcc"
@@ -156,9 +164,12 @@
         android:textColor="#000000"
         android:textSize="15sp"
         android:fontFamily="@font/segoeui"
+        app:fontFamily="@font/pyidaungsu_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="RtlCompat" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

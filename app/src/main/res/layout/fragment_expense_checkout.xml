@@ -138,79 +138,37 @@
         tools:ignore="RtlCompat" />
 
     <TextView
-        android:id="@+id/line9"
-        style="?android:attr/listSeparatorTextViewStyle"
-        android:layout_width="335dp"
-        android:layout_height="0.5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:background="#707070"
-        android:gravity="center_horizontal"
-        android:paddingTop="5dip"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmMenu3" />
-
-    <TextView
         android:id="@+id/textforSignIn21"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="75dp"
         android:gravity="center_horizontal"
         android:text="@string/price"
-        app:fontFamily="@font/segoeui"
         android:textAlignment="textEnd"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textforSignIn20"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn19"
-        tools:ignore="RtlCompat" />
-
-    <ImageButton
-        android:id="@+id/btmMenu3"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
-    <TextView
-        android:id="@+id/textforSignIn19"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/expense_checkout"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
         app:fontFamily="@font/segoeui"
-        app:layout_constraintStart_toEndOf="@+id/btmMenu3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textforSignIn20"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textforSignIn20"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="75dp"
         android:gravity="center_horizontal"
         android:text="@string/item"
-        app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmMenu3"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlCompat" />
 
 

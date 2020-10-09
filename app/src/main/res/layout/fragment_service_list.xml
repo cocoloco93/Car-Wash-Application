@@ -24,56 +24,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/line12"
-        style="?android:attr/listSeparatorTextViewStyle"
-        android:layout_width="335dp"
-        android:layout_height="0.5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:background="#707070"
-        android:gravity="center_horizontal"
-        android:paddingTop="5dip"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn32" />
-
-    <TextView
-        android:id="@+id/textforSignIn32"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/service_list"
-        app:fontFamily="@font/segoeui"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/btmMenu7"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/btmMenu7"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
     <ScrollView
         android:layout_width="342dp"
         android:layout_height="420dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="75dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn32"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
         <!--1colom-->
         <LinearLayout
@@ -88,11 +47,11 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:text="@string/small_car"
-                app:fontFamily="@font/segoeui"
                 android:textAlignment="textStart"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                app:fontFamily="@font/segoeui"
                 tools:ignore="RtlCompat" />
             <!--1 roll-->
             <LinearLayout
@@ -110,10 +69,10 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Wash Standard"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
 
@@ -127,10 +86,10 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Wash Premium"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
             </LinearLayout>
@@ -151,10 +110,10 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Polish Premium"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
 
@@ -168,10 +127,10 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Polish Standard"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
             </LinearLayout>
@@ -192,10 +151,10 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Interior Cleaning"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
 
@@ -209,10 +168,10 @@
                     android:paddingLeft="2dp"
                     android:paddingRight="2dp"
                     android:text="Car Coding Premium"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
                     android:textColor="@color/secondary"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
             </LinearLayout>
@@ -224,11 +183,11 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:text="@string/medium_car"
-                app:fontFamily="@font/segoeui"
                 android:textAlignment="textStart"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                app:fontFamily="@font/segoeui"
                 tools:ignore="RtlCompat" />
 
             <!--1 roll-->
@@ -245,9 +204,9 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="Car Wash Preminum"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
-                    android:textColor="@color/secondary">
+                    android:textColor="@color/secondary"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
 
@@ -259,9 +218,9 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="@string/car_wash"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
-                    android:textColor="@color/secondary">
+                    android:textColor="@color/secondary"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
             </LinearLayout>
@@ -279,9 +238,9 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="@string/car_wash"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
-                    android:textColor="@color/secondary">
+                    android:textColor="@color/secondary"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
 
@@ -292,10 +251,10 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
-                    app:fontFamily="@font/segoeui"
                     android:text="Car Wash Preminum"
                     android:textAllCaps="false"
-                    android:textColor="@color/secondary">
+                    android:textColor="@color/secondary"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
             </LinearLayout>
@@ -313,9 +272,9 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="Car Wash Preminum"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
-                    android:textColor="@color/secondary">
+                    android:textColor="@color/secondary"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
 
@@ -327,9 +286,9 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/gradient"
                     android:text="Car Wash Preminum"
-                    app:fontFamily="@font/segoeui"
                     android:textAllCaps="false"
-                    android:textColor="@color/secondary">
+                    android:textColor="@color/secondary"
+                    app:fontFamily="@font/segoeui">
 
                 </Button>
             </LinearLayout>
@@ -341,11 +300,11 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:text="@string/suv_car"
-                app:fontFamily="@font/segoeui"
                 android:textAlignment="textStart"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                app:fontFamily="@font/segoeui"
                 tools:ignore="RtlCompat" />
             <!--1 roll-->
             <LinearLayout

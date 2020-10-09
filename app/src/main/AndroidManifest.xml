@@ -12,7 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/MyanmarFontTheme" >
         </activity>
         <activity android:name=".ui.auth.SignInActivity" />
         <activity android:name=".ui.auth.SignUpActivity" />

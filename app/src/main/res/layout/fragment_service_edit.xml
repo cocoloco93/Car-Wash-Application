@@ -7,61 +7,20 @@
     tools:context=".ServiceEdit">
 
     <TextView
-        android:id="@+id/line6"
-        style="?android:attr/listSeparatorTextViewStyle"
-        android:layout_width="335dp"
-        android:layout_height="0.5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:background="#707070"
-        android:gravity="center_horizontal"
-        android:paddingTop="5dip"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmMenu6" />
-
-    <ImageButton
-        android:id="@+id/btmMenu6"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
-    <TextView
-        android:id="@+id/textforSignIn33"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/service_edit"
-        app:fontFamily="@font/segoeui"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/btmMenu6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textforSignIn"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="75dp"
         android:gravity="center_horizontal"
         android:text="@string/service_type"
-        app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textforSignIn33"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlCompat" />
 
     <EditText
@@ -69,15 +28,13 @@
         android:layout_width="335dp"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
         android:background="@drawable/border_line"
         android:gravity="center_horizontal"
         android:hint="@string/enter_price_for_edit"
-        app:fontFamily="@font/segoeui"
         android:textAlignment="center"
         android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textforSignIn23" />
 
@@ -92,7 +49,7 @@
         android:text="@string/service_price"
         app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,35 +77,33 @@
         android:id="@+id/btmDelete"
         android:layout_width="140dp"
         android:layout_height="43dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginLeft="240dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rectangle_red_btm"
         android:ellipsize="none"
         android:text="@string/delete"
-        app:fontFamily="@font/segoeui"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textAllCaps="false"
         android:textStyle="normal"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btmEdit"
         android:layout_width="140dp"
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/rectangle_buttom"
         android:ellipsize="none"
         android:text="@string/edit"
-        app:fontFamily="@font/segoeui"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textAllCaps="false"
         android:textStyle="normal"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -237,20 +237,6 @@
         tools:ignore="RtlCompat" />
 
     <TextView
-        android:id="@+id/line7"
-        style="?android:attr/listSeparatorTextViewStyle"
-        android:layout_width="335dp"
-        android:layout_height="0.5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:background="#707070"
-        android:gravity="center_horizontal"
-        android:paddingTop="5dip"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/line2"
         style="?android:attr/listSeparatorTextViewStyle"
         android:layout_width="335dp"
@@ -282,18 +268,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btmMenu"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
     <TextView
         android:id="@+id/textforSignIn5"
         android:layout_width="wrap_content"
@@ -305,7 +279,7 @@
         android:text="@string/car_type"
         app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -323,7 +297,7 @@
         android:text="@string/other_items"
         app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -363,21 +337,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textWelcome19"
         tools:ignore="RtlCompat" />
-
-    <TextView
-        android:id="@+id/textforSignIn18"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/checkout"
-        app:fontFamily="@font/segoeui"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/btmMenu"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textWelcome3"
@@ -430,17 +389,16 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="75dp"
         android:gravity="center_horizontal"
         android:text="@string/car_info"
-        app:fontFamily="@font/segoeui"
         android:textAlignment="textStart"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btmMenu"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlCompat" />
 
 

@@ -118,6 +118,18 @@
         android:label="@string/other_item_creation"
         tools:layout="@layout/fragment_other_items_creation" />
 
+    <fragment
+        android:id="@+id/nav_manager_creation"
+        android:name="com.example.carwash.ui.ShopInfo.ManagerCreationFragment"
+        android:label="@string/manager_creation"
+        tools:layout="@layout/fragment_manager_creation" />
+
+    <fragment
+        android:id="@+id/nav_manager_edit"
+        android:name="com.example.carwash.ui.ShopInfo.ManagerEditFragment"
+        android:label="@string/edit_manager"
+        tools:layout="@layout/fragment_manager_edit" />
+
 
 <!--    <fragment-->
 <!--        android:id="@+id/nav_sign_out"-->
