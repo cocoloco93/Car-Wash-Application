@@ -7,12 +7,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
-import com.example.carwash.MainActivity;
 import com.example.carwash.R;
 import com.example.carwash.ui.gettingstart.ShopCreation;
 
@@ -34,6 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     EditText edpassword;
     EditText edcompassword;
     Button btsignup;
+    TextView txtsignin;
     String signup_url;
 
     SharedPreferences sharedpreferences;
@@ -53,6 +55,7 @@ public class SignUpActivity extends AppCompatActivity {
         edpassword = (EditText) findViewById(R.id.edtextPassword);
         edcompassword = (EditText) findViewById(R.id.edtextComPassword);
         btsignup = (Button) findViewById(R.id.btmEditShop);
+        txtsignin = (TextView) findViewById(R.id.textSignIn) ;
 
         signup_url = getString(R.string.create_user_url);
 
@@ -60,6 +63,15 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 attemptSignUp();
+
+            }
+        });
+
+
+        txtsignin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveToActivitySignIn();
 
             }
         });
@@ -72,8 +84,9 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
-    private void moveToActivitySignUp() {
-        Intent intent = new Intent(SignUpActivity.this, ShopCreation.class);
+    private void moveToActivitySignIn() {
+        Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+        finish();
         startActivity(intent);
     }
 
@@ -82,108 +95,126 @@ public class SignUpActivity extends AppCompatActivity {
         // Store values at the time of the login attempt.
         final String text_username = edemail.getText().toString();
         final String text_password = edpassword.getText().toString();
-
-        try {
-            URL url = new URL(signup_url);
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestMethod("POST");
-            con.setRequestProperty("Content-Type", "application/json");
-            con.connect();
+        final String text_compassword = edcompassword.getText().toString();
 
 
-            JSONObject cred = new JSONObject();
-            cred.put("username", text_username);
-            cred.put("password", text_password);
+        edemail.setError(null);
+        edpassword.setError(null);
+        edcompassword.setError(null);
 
-            String jsonInputString = cred.toString();
-            String text1234 = "{\n" +
-                    "    \"username\": \"" + text_username + "\",\n" +
-                    "    \"password\": \"" + text_password + "\"\n" +
-                    "}";
+        // Check for a valid email address.
+        if (TextUtils.isEmpty(text_username)) {
+            edemail.setError(getString(R.string.error_field_required));
+        } else if (TextUtils.isEmpty(text_password)) {
+            edpassword.setError(getString(R.string.error_field_required));
+        } else if (TextUtils.isEmpty(text_compassword)) {
+            edcompassword.setError(getString(R.string.error_field_required));
+        } else {
+
+            try {
+                URL url = new URL(signup_url);
+                HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                con.setRequestMethod("POST");
+                con.setRequestProperty("Content-Type", "application/json");
+                con.connect();
 
 
-            Log.v("JSONSTring", jsonInputString);
-            Log.v("JSONSTring123", text1234);
+                JSONObject cred = new JSONObject();
+                cred.put("username", text_username);
+                cred.put("password", text_password);
 
-            DataOutputStream os = new DataOutputStream(con.getOutputStream());
-            os.writeBytes(text1234);
-            os.flush();
-            os.close();
+                String jsonInputString = cred.toString();
+                String text1234 = "{\n" +
+                        "    \"username\": \"" + text_username + "\",\n" +
+                        "    \"password\": \"" + text_password + "\"\n" +
+                        "}";
 
-            final int code = con.getResponseCode();
-            Log.v("code", String.valueOf(code));
 
-            if (code == 504 || code == 406) {
+                Log.v("JSONSTring", jsonInputString);
+                Log.v("JSONSTring123", text1234);
 
-                // Use the Builder class for convenient dialog construction
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("App Title");
-                builder.setMessage("User already exist" + " \nCode : " + code);
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // You don't have to do anything here if you just
-                        // want it dismissed when clicked
-                    }
-                });
+                DataOutputStream os = new DataOutputStream(con.getOutputStream());
+                os.writeBytes(text1234);
+                os.flush();
+                os.close();
 
-                builder.show();
+                final int code = con.getResponseCode();
+                Log.v("code", String.valueOf(code));
 
-            } else if (code == 200) {
-
-                try (BufferedReader br = new BufferedReader(
-                        new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
-                    StringBuilder response = new StringBuilder();
-                    String responseLine = null;
-                    while ((responseLine = br.readLine()) != null) {
-                        response.append(responseLine.trim());
-                    }
-                    System.out.println(response.toString());
-                    Log.v("Login123", response.toString());
-
-                    JSONObject answer = new JSONObject(response.toString());
-                    final String token = answer.getString("token");
-
-                    Log.v("msg", token);
+                if (code == 504 || code == 406) {
 
                     // Use the Builder class for convenient dialog construction
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle("App Title");
-                    builder.setMessage("User is successfully created");
+                    builder.setMessage("User already exist" + " \nCode : " + code);
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             // You don't have to do anything here if you just
                             // want it dismissed when clicked
-
-
-                            String n = text_username;
-                            String e = text_password;
-                            String t = token;
-
-
-                            if (sharedpreferences.getString("Token", "").equals(token)) {
-
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                startActivity(intent);
-                                Log.v("Message123", token);
-
-                            } else {
-                                SharedPreferences.Editor editor = sharedpreferences.edit();
-                                editor.putString(Name, n);
-                                editor.putString(Email, e);
-                                editor.putString(Token, t);
-                                editor.apply();
-
-                                Log.v("Editor_Name", Objects.requireNonNull(sharedpreferences.getString(Name, "")));
-
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                finish();
-                                startActivity(intent);
-                                Log.v("Message123", token);
-                            }
                         }
                     });
 
                     builder.show();
+
+                } else if (code == 200) {
+
+                    try (BufferedReader br = new BufferedReader(
+                            new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
+                        StringBuilder response = new StringBuilder();
+                        String responseLine = null;
+                        while ((responseLine = br.readLine()) != null) {
+                            response.append(responseLine.trim());
+                        }
+                        System.out.println(response.toString());
+                        Log.v("Login123", response.toString());
+
+                        JSONObject answer = new JSONObject(response.toString());
+                        final String token = answer.getString("token");
+
+                        Log.v("msg", token);
+
+                        // Use the Builder class for convenient dialog construction
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                        builder.setTitle("App Title");
+                        builder.setMessage("User is successfully created");
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // You don't have to do anything here if you just
+                                // want it dismissed when clicked
+
+
+                                String n = text_username;
+                                String e = text_password;
+                                String t = token;
+
+
+                                if (sharedpreferences.getString("Token", "").equals(token)) {
+
+                                    Intent intent = new Intent(getApplicationContext(), ShopCreation.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                    finish();
+                                    startActivity(intent);
+                                    Log.v("Message123", token);
+
+                                } else {
+                                    SharedPreferences.Editor editor = sharedpreferences.edit();
+                                    editor.putString(Name, n);
+                                    editor.putString(Email, e);
+                                    editor.putString(Token, t);
+                                    editor.apply();
+
+                                    Log.v("Editor_Name", Objects.requireNonNull(sharedpreferences.getString(Name, "")));
+
+                                    Intent intent = new Intent(getApplicationContext(), ShopCreation.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                    finish();
+                                    startActivity(intent);
+                                    Log.v("Message123", token);
+                                }
+                            }
+                        });
+
+                        builder.show();
 
 //                    // Use the Builder class for convenient dialog construction
 //                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -200,16 +231,15 @@ public class SignUpActivity extends AppCompatActivity {
 //
 //                    builder.show();
 
+                    }
+
                 }
 
+
+            } catch (Exception ex) {
+                ex.printStackTrace();
             }
 
-
-
-
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
         }
 
     }

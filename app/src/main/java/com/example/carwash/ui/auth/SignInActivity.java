@@ -115,6 +115,7 @@ public class SignInActivity extends AppCompatActivity {
 
         private void moveToActivitySignUp(){
             Intent intent =new Intent(SignInActivity.this, SignUpActivity.class);
+            finish();
             startActivity(intent);
     }
 
@@ -213,6 +214,8 @@ public class SignInActivity extends AppCompatActivity {
                                     if (sharedpreferences.getString("Token", "").equals(token)) {
 
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        finish();
                                         startActivity(intent);
                                         Log.v("Message1234", token);
 
@@ -228,6 +231,7 @@ public class SignInActivity extends AppCompatActivity {
 
 
                                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                         finish();
                                         startActivity(intent);
                                         Log.v("Message123", token);

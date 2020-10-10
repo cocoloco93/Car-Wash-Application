@@ -17,14 +17,21 @@
         <activity android:name=".ui.auth.SignInActivity" />
         <activity android:name=".ui.auth.SignUpActivity" />
         <activity android:name=".ui.gettingstart.OtherItemCreation" />
-        <activity android:name=".ui.gettingstart.ShopCreation" />
+        <activity android:name=".ui.gettingstart.ManagerCreation" />
+        <activity android:name=".ui.gettingstart.ShopCreation">
+
+
+
+        </activity>
         <activity android:name=".ui.gettingstart.ServiceCreation" />
         <activity android:name=".GettingStartActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("App Title");
+        builder.setTitle("App Info");
         builder.setMessage("You will be logged out");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putString(Name, "");
                 editor.putString(Email, "");
-                editor.putString(Token, "");
+                editor.putString(TokenKey, "");
                 editor.apply();
 
                 String a = sharedpreferences.getString(Name,"");
@@ -135,6 +135,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
                 Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                finish();
                 startActivity(intent);
 
             }

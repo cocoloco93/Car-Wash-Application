@@ -62,10 +62,13 @@ public class GettingStartActivity extends AppCompatActivity {
 
         assert Token != null;
 
+        if (!Objects.equals(sharedpreferences.getString(TokenKey,""), "")) {
+            sub.setVisibility(View.GONE);
+        } 
 
 
 
-        frombottom.setAnimationListener(new Animation.AnimationListener() {
+        fromtop.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
 
@@ -92,7 +95,9 @@ public class GettingStartActivity extends AppCompatActivity {
     };
 
 
-    private void goToMainActivity() { Intent intent = new Intent(GettingStartActivity.this, SignInActivity.class);
+    private void goToMainActivity() {
+        Intent intent = new Intent(GettingStartActivity.this, SignInActivity.class);
+        finish();
         startActivity(intent);
     }
 

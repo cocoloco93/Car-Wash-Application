@@ -7,6 +7,24 @@
     tools:context=".ui.auth.SignUpActivity">
 
     <TextView
+        android:id="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/segoeubold"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/pyidaungsu_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
         android:id="@+id/textWelcome14"
         android:layout_width="wrap_content"
         android:layout_height="63dp"
@@ -26,80 +44,18 @@
         tools:ignore="RtlCompat" />
 
     <TextView
-        android:id="@+id/textSignIn"
+        android:id="@+id/textEmail"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_gravity="start"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="80dp"
-        android:gravity="center"
-        android:text="@string/sign_in"
-        android:textAlignment="textStart"
-        android:textColor="@color/colorAccent"
-        android:textSize="15sp"
-        android:fontFamily="@font/segoeubold"
-        app:fontFamily="@font/pyidaungsu_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textAlreadyAcc2"
-        tools:ignore="RtlCompat" />
-
-    <TextView
-        android:id="@+id/textAlreadyAcc2"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginLeft="95dp"
-        android:layout_marginBottom="80dp"
-        android:gravity="center"
-        android:text="@string/already_have_an_account"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="15sp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="140dp"
         android:fontFamily="@font/segoeui"
+        android:text="@string/email"
+        android:textColor="@color/bulecolor"
+        android:textSize="20sp"
         app:fontFamily="@font/pyidaungsu_"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="RtlCompat" />
-
-    <EditText
-        android:id="@+id/edtextComPassword"
-        android:layout_width="335dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="5dp"
-        android:gravity="center"
-        android:hint="**********"
-        android:ems="10"
-        android:maxLength="20"
-        android:inputType="textPassword"
-        android:textAlignment="textStart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textComPassword"
-        tools:ignore="RtlCompat" />
-
-    <EditText
-        android:id="@+id/edtextPassword"
-        android:layout_width="335dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="5dp"
-        android:gravity="center"
-        android:hint="**********"
-        android:ems="10"
-        android:maxLength="20"
-        android:inputType="textPassword"
-        android:textAlignment="textStart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPassword"
-        tools:ignore="RtlCompat" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textSignUp" />
 
     <EditText
         android:id="@+id/edtextGmail"
@@ -121,89 +77,124 @@
         app:layout_constraintTop_toBottomOf="@+id/textEmail"
         tools:ignore="RtlCompat" />
 
-
     <TextView
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
+        android:fontFamily="@font/segoeui"
         android:text="@string/password"
         android:textColor="@color/bulecolor"
         android:textSize="20sp"
-        android:fontFamily="@font/segoeui"
         app:fontFamily="@font/pyidaungsu_"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtextGmail" />
 
-    <TextView
-        android:id="@+id/textEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
+    <EditText
+        android:id="@+id/edtextPassword"
+        android:layout_width="335dp"
+        android:layout_height="41dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="140dp"
-        android:text="@string/email"
-        android:fontFamily="@font/segoeui"
-        app:fontFamily="@font/pyidaungsu_"
-        android:textColor="@color/bulecolor"
-        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="**********"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textAlignment="textStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textComPassword"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
+        android:fontFamily="@font/segoeui"
         android:text="@string/comfirm_password"
         android:textColor="@color/bulecolor"
         android:textSize="20sp"
-        android:fontFamily="@font/segoeui"
         app:fontFamily="@font/pyidaungsu_"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtextPassword" />
 
-    <TextView
-        android:id="@+id/textSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
+    <EditText
+        android:id="@+id/edtextComPassword"
+        android:layout_width="335dp"
+        android:layout_height="41dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/segoeubold"
-        app:fontFamily="@font/pyidaungsu_bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
         android:gravity="center"
-        android:text="@string/sign_up"
+        android:hint="**********"
+        android:ems="10"
+        android:maxLength="20"
+        android:inputType="textPassword"
         android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textComPassword"
         tools:ignore="RtlCompat" />
+
 
     <Button
         android:id="@+id/btmEditShop"
         android:layout_width="251dp"
         android:layout_height="43dp"
         android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/rounded_buttom"
         android:ellipsize="none"
+        android:fontFamily="@font/segoeui"
         android:text="@string/sign_up"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:fontFamily="@font/segoeui"
-        app:fontFamily="@font/pyidaungsu_"
         android:textStyle="bold"
+        app:fontFamily="@font/pyidaungsu_"
         app:layout_constraintBottom_toTopOf="@+id/textAlreadyAcc2"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textAlreadyAcc2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center"
+        android:text="@string/already_have_an_account"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/pyidaungsu_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
 
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/segoeubold"
+        android:gravity="center"
+        android:text="@string/sign_in"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        app:fontFamily="@font/pyidaungsu_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textAlreadyAcc2"
+        tools:ignore="RtlCompat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
