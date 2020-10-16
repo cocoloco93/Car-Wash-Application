@@ -1,13 +1,22 @@
 package com.example.carwash.ui.carnumberecords;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.carwash.R;
+import com.github.mikephil.charting.charts.PieChart;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.data.PieEntry;
+import com.github.mikephil.charting.utils.ColorTemplate;
 
 import androidx.fragment.app.Fragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +24,7 @@ import androidx.fragment.app.Fragment;
  * create an instance of this fragment.
  */
 public class CarNumberRecordsFragment extends Fragment {
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,6 +39,7 @@ public class CarNumberRecordsFragment extends Fragment {
         // Required empty public constructor
     }
 
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -37,6 +48,8 @@ public class CarNumberRecordsFragment extends Fragment {
      * @param param2 Parameter 2.
      * @return A new instance of fragment CarNumberRecordsFragment.
      */
+
+
     // TODO: Rename and change types and number of parameters
     public static CarNumberRecordsFragment newInstance(String param1, String param2) {
         CarNumberRecordsFragment fragment = new CarNumberRecordsFragment();
@@ -50,6 +63,10 @@ public class CarNumberRecordsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -62,4 +79,7 @@ public class CarNumberRecordsFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_car_number_records, container, false);
     }
+
+
 }
+    

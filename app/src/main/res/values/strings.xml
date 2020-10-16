@@ -108,10 +108,42 @@
         <item>@string/small_car</item>
         <item>@string/medium_car</item>
         <item>@string/suv_car</item>
+        <item>@string/large_car</item>
+        <item>@string/cycle</item>
+        <item>@string/bus</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="choose_date_arrays">
+        <item>@string/daily</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+        <item>@string/yearly</item>
+
+
+    </string-array>
+
+
+
     <string name="user_name">Name</string>
     <string name="manager_creation">Manager Creation</string>
     <string name="create_manager">Create Manager</string>
     <string name="edit_manager">Edit Manager</string>
+    <string name="service_name">Service Name</string>
+    <string name="remark">*Remark</string>
+    <string name="electric">Electric Fees</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="submit">Submit</string>
+    <string name="thank_you">Thank You</string>
+    <string name="add_manager">Add Manager Account</string>
+    <string name="large_car">Large Car</string>
+    <string name="cycle">Cycle</string>
+    <string name="bus">Bus</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="weekly">Weekly</string>
+    <string name="search">Search</string>
 
 </resources>

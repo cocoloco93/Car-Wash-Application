@@ -21,6 +21,7 @@
         android:maxLength="20"
         android:hint="**********"
         android:inputType="textPassword"
+        android:background="@drawable/border_line"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPassword3" />
@@ -65,6 +66,7 @@
         android:drawablePadding="5dp"
         android:ems="10"
         android:hint="**********"
+        android:background="@drawable/border_line"
         android:maxLength="20"
         android:inputType="textPassword"
         android:textSize="15sp"
@@ -96,6 +98,7 @@
         android:focusable="true"
         android:gravity="center"
         android:hint="mrbanana"
+        android:background="@drawable/border_line"
         android:inputType="textEmailSubject"
         android:maxLength="30"
         android:textAlignment="textStart"

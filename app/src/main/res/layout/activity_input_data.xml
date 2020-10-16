@@ -60,7 +60,9 @@
         android:gravity="center_horizontal"
         android:hint="@string/enter_item_type"
         app:fontFamily="@font/segoeui"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
+        android:maxLength="30"
+        android:inputType="text"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textforSignIn24" />

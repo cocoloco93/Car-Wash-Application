@@ -65,7 +65,7 @@
         android:background="@drawable/rounded_buttom"
         android:ellipsize="none"
         android:text="@string/set_up"
-        app:fontFamily="@font/segoeui"
+        app:fontFamily="@font/pyidaungsu_"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
