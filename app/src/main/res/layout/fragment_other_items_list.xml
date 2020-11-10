@@ -233,7 +233,7 @@
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textWelcome3"
+        app:layout_constraintTop_toBottomOf="@+id/text_car_info_1"
         tools:ignore="RtlCompat" />
 
     <TextView
@@ -339,7 +339,7 @@
         tools:ignore="RtlCompat" />
 
     <TextView
-        android:id="@+id/textWelcome3"
+        android:id="@+id/text_car_info_1"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:layout_marginStart="30dp"

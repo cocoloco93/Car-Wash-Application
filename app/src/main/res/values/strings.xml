@@ -77,8 +77,8 @@
     <string name="error_field_required">This field is required</string>
 
     <!-- no need to translate && related to authentication-->
-    <string name="login_api_url">http://178.128.23.146/auth/sign_in</string>
-    <string name="create_user_url">http://178.128.23.146/auth/sign_up</string>
+    <string name="login_api_url">https://yangonianstech.com/api/auth/sign_in</string>
+    <string name="create_user_url">https://yangonianstech.com/api/auth/sign_up</string>
 
 
     <!--car type array list-->
@@ -124,7 +124,11 @@
     </string-array>
 
 
+    <string name="text_with_paragraphs">
+        Date$Time  &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;2.1.2020,2:00 \nCar number &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;8M/8888
+        \nVehicle    &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;SUV
 
+    </string>
     <string name="user_name">Name</string>
     <string name="manager_creation">Manager Creation</string>
     <string name="create_manager">Create Manager</string>

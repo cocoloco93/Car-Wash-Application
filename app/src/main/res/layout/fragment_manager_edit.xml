@@ -94,7 +94,7 @@
                     android:layout_height="33dp"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/rectangle_red_btm"
-                    android:drawableRight="@drawable/delete"
+                    android:drawableRight="@drawable/delete_icon"
                     android:fontFamily="@font/pyidaungsu_"
                     android:paddingRight="5dp"
                     android:text="@string/delete"

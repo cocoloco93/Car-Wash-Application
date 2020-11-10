@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".ui.IncomeRecords.DailyIncomeRecordsFragment">
+
+
 
 
     <com.github.mikephil.charting.charts.PieChart
@@ -28,36 +30,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textforSignIn29"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/rectangle_buttom"
-                android:fontFamily="@font/pyidaungsu_"
-                android:paddingLeft="10dp"
-                android:text="@string/text_with_paragraphs"
-                android:textColor="@color/colorPrimary" />
-            <!--1 roll-->
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textforSignIn29"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rectangle_buttom"
+                    android:fontFamily="@font/pyidaungsu_"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_with_paragraphs"
+                    android:textColor="@color/colorPrimary" />
+                <!--1 roll-->
 
 
-            <Button
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_alignParentRight="true"
-                android:visibility="visible"
-                android:background="@drawable/x" />
+                <Button
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:background="@drawable/x" />
 
-        </RelativeLayout>
+            </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,3 +129,6 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
