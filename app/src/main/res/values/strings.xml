@@ -127,6 +127,7 @@
     <string name="text_with_paragraphs">
         Date$Time  &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;2.1.2020,2:00 \nCar number &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;8M/8888
         \nVehicle    &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;SUV
+        \nPackages  &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;Car Wash
 
     </string>
     <string name="user_name">Name</string>
@@ -149,5 +150,17 @@
     <string name="choose_date">Choose Date</string>
     <string name="weekly">Weekly</string>
     <string name="search">Search</string>
+    <string name="today_data">"Today data "</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="k20">K 2000,000</string>
+    <string name="date_">16/8/2020</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fir</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
 
 </resources>

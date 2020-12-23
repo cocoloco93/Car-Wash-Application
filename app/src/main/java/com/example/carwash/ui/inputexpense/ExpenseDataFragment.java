@@ -20,7 +20,7 @@ public class ExpenseDataFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_expense_data, container, false);
 
-        final TextView textView = root.findViewById(R.id.text_home);
+
 
 
         final Button b1 = root.findViewById(R.id.btmCreate3);

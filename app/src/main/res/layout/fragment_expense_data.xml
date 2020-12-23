@@ -10,40 +10,54 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         app:layout_constraintTop_toBottomOf="@+id/textforSignIn30"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
         <!--1colom-->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <!--roll-->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/lines_frame"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_buttom"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textforSignIn29"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@drawable/rectangle_buttom"
-                    android:fontFamily="@font/pyidaungsu_"
-                    android:paddingLeft="10dp"
-                    android:text="@string/text_with_paragraphs"
-                    android:textAlignment="center"
+                    android:layout_width="170dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:textSize="18sp"
+                    android:text="@string/electric"
                     android:textColor="@color/colorPrimary" />
 
-                <!--1 roll-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="187dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:text="100,000ks"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary" />
 
 
-
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/delete_drawable" />
 
                 <Button
                     android:layout_width="25dp"
@@ -51,54 +65,54 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/edit_icon"/>
-
-
-
-                <Button
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="45dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/delete_icon"
-                    android:visibility="visible" />
-
-
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/edit_icon" />
 
 
             </RelativeLayout>
             <!--roll-->
 
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/lines_frame"
                 android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="150dp"
+                    android:id="@+id/edtextServiceType4"
+                    android:layout_width="170dp"
                     android:layout_height="33dp"
-                    android:background="@drawable/dotlines"
-                    android:layout_marginTop="30dp"
-                   android:layout_marginLeft="20dp"
-                    android:hint="@string/enter_item_type" />
-
-
-                <!--1 roll-->
-
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_line"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/enter_item_type"
+                    android:inputType="textEmailSubject"
+                    android:maxLength="30"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/pyidaungsu_" />
 
                 <EditText
-                    android:layout_width="150dp"
+                    android:id="@+id/edtextServiceType4"
+                    android:layout_width="100dp"
                     android:layout_height="33dp"
-                    android:layout_marginLeft="200dp"
-                    android:layout_marginTop="30dp"
-                    android:text="@string/price"/>
+                    android:layout_marginStart="187dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_line"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/price"
+                    android:inputType="textEmailSubject"
+                    android:maxLength="30"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/pyidaungsu_" />
 
 
                 <Button
@@ -106,31 +120,14 @@
                     android:layout_height="25dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="4dp"
                     android:layout_marginRight="5dp"
 
-                    android:background="@drawable/edit_icon"/>
-
-
-
-                <Button
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="45dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/delete_icon"
-                    android:visibility="visible" />
-
-
+                    android:background="@drawable/done_icon" />
 
 
             </RelativeLayout>
             <!--roll-->
-
-
-
 
 
         </LinearLayout>
@@ -177,11 +174,11 @@
         android:id="@+id/textforSignIn4"
         android:layout_width="150dp"
         android:layout_height="30dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="37dp"
         android:layout_marginTop="75dp"
         android:gravity="center_horizontal"
         android:text="@string/price"
-        android:textAlignment="textEnd"
+        android:textAlignment="textStart"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:textStyle="bold"

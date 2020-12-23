@@ -29,9 +29,8 @@ import java.util.List;
  */
 public class CarNumberRecordsFragment extends Fragment {
      PieChart pie;
-    float rainfall[] ={98.8f,123.8f,161.6f,24.2f,52f,35.4f,13.8f,73.4f,203.4f,240.4f,240.2f,159.7f};
-    String monthName[] = {"Jan","Feb","Mar","April","May","June","July",
-            "Aug","Sep","Oct","Nov","Dec"};
+    float rainfall[] ={98.8f,123.8f,161.6f,24.2f,52f,35.4f};
+    String monthName[] = {"Jan","Feb","Mar","April","May","June"};
 
 
         // TODO: Rename parameter arguments, choose names that match
@@ -93,7 +92,7 @@ public class CarNumberRecordsFragment extends Fragment {
             pieEntries.add(new PieEntry(rainfall[i], monthName[i]));
 
             PieDataSet PiedataSet = new PieDataSet(pieEntries,"");
-            PiedataSet.setColors(ColorTemplate.JOYFUL_COLORS);
+            PiedataSet.setColors(ColorTemplate.MATERIAL_COLORS);
             PiedataSet.setValueTextColor(Color.BLACK);
             PiedataSet.setValueTextSize(10f);
             PieData data = new PieData(PiedataSet);
@@ -102,7 +101,7 @@ public class CarNumberRecordsFragment extends Fragment {
             pie.setCenterText("Total Numbers of Cars ");
             pie.setCenterTextRadiusPercent(80);
             pie.setData(data);
-            pie.setHoleRadius(70);
+            pie.setHoleRadius(60);
             pie.highlightValues(null);
             pie.setTransparentCircleRadius(1);
             pie.setRotationEnabled(false);

@@ -44,9 +44,10 @@
 
     <EditText
         android:id="@+id/edtextServicePrice"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/border_line"
@@ -80,9 +81,10 @@
 
     <EditText
         android:id="@+id/edtextServiceType"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/border_line"
@@ -98,9 +100,10 @@
 
     <EditText
         android:id="@+id/edtextServiceType2"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/border_line"
         android:gravity="center_horizontal"
@@ -133,9 +136,10 @@
 
     <Spinner
         android:id="@+id/spinnerCarType"
-        android:layout_width="335dp"
+        android:layout_width="match_parent"
         android:layout_height="33dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="15dp"
         android:entries="@array/car_type_arrays"

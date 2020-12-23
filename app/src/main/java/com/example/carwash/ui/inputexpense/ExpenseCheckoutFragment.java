@@ -18,7 +18,6 @@ public class ExpenseCheckoutFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_expense_checkout, container, false);
 
-        final TextView textView = root.findViewById(R.id.text_home);
 
 
         final Button b1 = root.findViewById(R.id.btmSetUp2);

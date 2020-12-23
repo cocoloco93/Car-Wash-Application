@@ -22,7 +22,6 @@ public class InputDataFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_input_data, container, false);
 
-        final TextView textView = root.findViewById(R.id.text_home);
 
 
         final Button b1 = root.findViewById(R.id.btmCreate2);

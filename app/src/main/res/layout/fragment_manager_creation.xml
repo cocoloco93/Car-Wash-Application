@@ -11,12 +11,15 @@
 
     <EditText
         android:id="@+id/edtextPassword3"
-        android:layout_width="335dp"
-        android:layout_height="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
         android:drawableLeft="@drawable/password"
-        android:drawablePadding="5dp"
+        android:drawablePadding="10dp"
+        android:paddingTop="5dp"
         android:ems="10"
         android:maxLength="20"
         android:hint="**********"
@@ -39,31 +42,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtextPassword2" />
 
-    <Button
-        android:id="@+id/btmCreate4"
-        android:layout_width="251dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/rounded_buttom"
-        android:ellipsize="none"
-        android:text="@string/create"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/segoeui"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
     <EditText
         android:id="@+id/edtextPassword2"
-        android:layout_width="335dp"
-        android:layout_height="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="5dp"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/ic_test"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="**********"
         android:background="@drawable/border_line"
@@ -88,12 +79,14 @@
 
     <EditText
         android:id="@+id/edtextUName"
-        android:layout_width="335dp"
-        android:layout_height="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
         android:drawableLeft="@drawable/name"
-        android:drawablePadding="5dp"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:focusable="true"
         android:gravity="center"
@@ -122,4 +115,33 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <Button
+            android:id="@+id/btmCreate4"
+            android:layout_width="251dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_buttom"
+            android:ellipsize="none"
+            android:text="@string/create"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/segoeui"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

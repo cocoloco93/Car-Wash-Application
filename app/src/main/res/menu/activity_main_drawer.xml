@@ -6,36 +6,36 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_dashboard"
-            android:icon="@drawable/ic_dashboard"
+            android:icon="@drawable/ic_dashboard_icon"
             android:title="@string/menu_dashboard" />
 
         <item
             android:id="@+id/nav_input_data"
-            android:icon="@drawable/ic_input_data"
+            android:icon="@drawable/ic_input_data_icons"
             android:title="@string/menu_input_data" />
         <item
             android:id="@+id/nav_expense_records"
-            android:icon="@drawable/ic_expense_records"
+            android:icon="@drawable/ic_expense_records_icon"
             android:title="@string/menu_expense_records" />
 
         <item
             android:id="@+id/nav_income_records"
-            android:icon="@drawable/ic_income_records"
+            android:icon="@drawable/ic_income_records_icon"
             android:title="@string/menu_income_records" />
 
         <item
             android:id="@+id/nav_car_number_records"
-            android:icon="@drawable/ic_car_num_records"
+            android:icon="@drawable/ic_car_number_records_icon"
             android:title="@string/menu_car_number_record" />
 
         <item
             android:id="@+id/nav_input_expense"
-            android:icon="@drawable/ic_input_expense"
+            android:icon="@drawable/ic_input_expense_icons"
             android:title="@string/menu_input_expense" />
 
         <item
             android:id="@+id/nav_shop_info"
-            android:icon="@drawable/ic_shop_info"
+            android:icon="@drawable/ic_shop_info_icon"
             android:title="@string/menu_shop_info" />
 
         <item

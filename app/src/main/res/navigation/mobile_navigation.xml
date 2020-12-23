@@ -39,6 +39,14 @@
         android:label="@string/menu_expense_records"
         tools:layout="@layout/fragment_expense_records" />
 
+    <fragment
+        android:id="@+id/nav_monthly_expense_records"
+        android:name="com.example.carwash.ui.expenserecords.MonthlyExpenseRecordsFragment"
+        android:label="Monthly Expense Records"
+        tools:layout="@layout/fragment_monthly_expense_records" />
+
+
+
 
     <!--Income Records-->
     <fragment
@@ -47,6 +55,12 @@
         android:label="@string/menu_income_records"
         tools:layout="@layout/fragment_income_records" />
 
+    <fragment
+        android:id="@+id/nav_monthly_income_records"
+        android:name="com.example.carwash.ui.IncomeRecords.MonthlyIncomeRecordsFragment"
+        android:label="Monthly Income Records"
+        tools:layout="@layout/fragment_monthly_income_records" />
+
 
     <!--Car Number Records-->
     <fragment
@@ -54,6 +68,12 @@
         android:name="com.example.carwash.ui.carnumberecords.CarNumberRecordsFragment"
         android:label="@string/menu_car_number_record"
         tools:layout="@layout/fragment_car_number_records" />
+
+    <fragment
+        android:id="@+id/nav_car_number_check_out"
+        android:name="com.example.carwash.ui.carnumberecords.CarNumberCheckOutFragment"
+        android:label="@string/menu_car_number_record"
+        tools:layout="@layout/fragment_car_number_check_out" />
 
 
     <!--Input Expense-->
