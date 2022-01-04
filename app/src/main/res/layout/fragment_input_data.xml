@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+
+
+<!--1 roll !-->
+
+
+    <!--1 roll !-->
+
+
+    <TextView
+        android:id="@+id/textforSignIn24"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal"
+        android:text="@string/car_plate_num"
+        android:textAlignment="textStart"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/pyidaungsu_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/edtextItem2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/border_line"
+        android:gravity="center_horizontal"
+        android:hint="@string/enter_item_type"
+        app:fontFamily="@font/pyidaungsu_"
+        android:textAlignment="textStart"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn24"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textforSignIn25"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/car_type"
+        app:fontFamily="@font/pyidaungsu_"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtextItem2"
+        tools:ignore="RtlCompat" />
+
+    <Spinner
+        android:id="@+id/spinnerCarType2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textStart"
+        android:layout_marginRight="30dp"
+        android:entries="@array/car_type_arrays"
+        android:background="@drawable/droup_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn25" />
+
+    <TextView
+        android:id="@+id/textforSignIn26"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/service_type"
+        app:fontFamily="@font/pyidaungsu_"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCarType2"
+        tools:ignore="RtlCompat" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn26">
+        <!--1colom-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <!--1 roll-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbox"
+                    android:layout_width="335dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/gradient"
+                    android:button="?android:attr/listChoiceIndicatorSingle"
+                    android:buttonTint="@color/secondary"
+                    android:checked="true"
+                    android:text="Interiror Cleaing"
+                    app:fontFamily="@font/segoeui"
+                    android:textColor="@color/secondary"
+                    android:textSize="18sp">
+
+                </CheckBox>
+
+
+            </LinearLayout>
+
+
+            <!--1 roll-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <CheckBox
+                    android:id="@+id/chbox2"
+                    android:layout_width="335dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/gradient"
+                    android:button="?android:attr/listChoiceIndicatorSingle"
+                    android:buttonTint="@color/secondary"
+                    android:checked="true"
+                    android:text="@string/car_wash"
+                    app:fontFamily="@font/segoeui"
+                    android:textColor="@color/secondary"
+                    android:textSize="18sp">
+
+                </CheckBox>
+
+
+            </LinearLayout>
+            <!--1 roll-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <CheckBox
+                    android:id="@+id/chbox3"
+                    android:layout_width="335dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/gradient"
+                    android:button="?android:attr/listChoiceIndicatorSingle"
+                    android:buttonTint="@color/secondary"
+                    android:checked="true"
+                    android:text="Car Polish"
+                    app:fontFamily="@font/segoeui"
+                    android:textColor="@color/secondary"
+                    android:textSize="18sp">
+
+                </CheckBox>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textforSignIn30"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/other_items"
+        app:fontFamily="@font/pyidaungsu_"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:ignore="RtlCompat" />
+
+
+    <Spinner
+        android:id="@+id/spinnerCarType3"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/droup_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn30" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/minus"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCarType3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/plus"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCarType3" />
+
+    <Button
+        android:id="@+id/btmCreate2"
+        android:layout_width="251dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_buttom"
+        android:text="@string/checkout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/pyidaungsu_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dotlines"
+        android:gravity="center"
+        android:text="10"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCarType3"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn30" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

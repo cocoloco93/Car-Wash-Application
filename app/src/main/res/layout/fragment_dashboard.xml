@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+        <!--1colom-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textforSignIn10"
+                android:layout_width="189dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:text="@string/today_data"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/pyidaungsu_"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textWelcome4"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="start"
+                android:text="@string/income"
+                app:fontFamily="@font/segoeui"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/textWelcome4"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:gravity="start"
+                android:text="@string/expense"
+                app:fontFamily="@font/segoeui"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textWelcome4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="@string/k20"
+                    app:fontFamily="@font/segoeui"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="13sp"/>
+
+
+
+                <TextView
+                    android:id="@+id/textWelcome4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="@string/k20"
+                    app:fontFamily="@font/segoeui"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="13sp"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/line2"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="335dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+                android:background="#707070"
+                android:gravity="center_horizontal"
+                android:paddingTop="1dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textWelcome4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="start"
+                    android:text="@string/date_"
+                    app:fontFamily="@font/segoeui"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="11sp"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="70dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/daily"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="70dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/monthly"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+
+
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="70dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/yearly"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/mon"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/tue"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/wed"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/thu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/fri"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/sat"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+                <Button
+                    android:id="@+id/btmEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="none"
+                    android:text="@string/sun"
+                    android:textAllCaps="false"
+                    android:textColor="@color/bulecolor"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    app:fontFamily="@font/segoeui"/>
+            </LinearLayout>
+
+
+
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/line2"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="335dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#707070"
+                android:gravity="center_horizontal"
+                android:paddingTop="1dp"/>
+
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/line2"
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="335dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#707070"
+                android:gravity="center_horizontal"
+                android:paddingTop="1dp"/>
+
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linecart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

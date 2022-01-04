@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpenseCheckout">
+
+    <TextView
+        android:id="@+id/textWelcome10"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:gravity="start"
+        android:text="100000MMK"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textWelcome9"
+        app:layout_constraintTop_toBottomOf="@+id/line10"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome8"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:gravity="start"
+        android:text="100000MMK"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textWelcome7"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome5"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome7"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/car_plate_num"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome4"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btmSetUp2"
+        android:layout_width="251dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_buttom"
+        android:ellipsize="none"
+        android:text="@string/set_up"
+        app:fontFamily="@font/pyidaungsu_"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textWelcome4"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/car_plate_num"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn21"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome5"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:gravity="start"
+        android:text="100000MMK"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textWelcome4"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn21"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/line10"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="335dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dotlines"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome8" />
+
+    <TextView
+        android:id="@+id/textWelcome9"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/car_plate_num"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line10"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textforSignIn21"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal"
+        android:text="@string/price"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toEndOf="@+id/textforSignIn20"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textforSignIn20"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal"
+        android:text="@string/item"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

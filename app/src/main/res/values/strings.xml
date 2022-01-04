@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Car Wash</string>
+    <string name="app_name">Auto FM</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="welcome_to">Welcom To</string>
+    <string name="welcome_to">"Welcome "</string>
     <string name="sign_in">Sign In</string>
     <string name="car_wash_company">Car Wah Company</string>
     <string name="dont_have_an_account">Dont have an account?</string>
@@ -10,6 +10,157 @@
     <string name="comfirm_password">Comfirm Password</string>
     <string name="already_have_an_account">Already have an account</string>
     <string name="slogan">Slogan</string>
+    <string name="setup">Setup</string>
+    <string name="work_operation">Work Operation</string>
+    <string name="shop_setup">Shop Setup</string>
+    <string name="shop_setup_box">A little bit of words y users need to Setup Shop.A little bit of words y users need to  Setup Shop.</string>
+    <string name="edit_shop">Edit Shop</string>
+    <string name="service_creation">Service Creation</string>
+    <string name="service_creation_box">A little bit of words y users need to create service.</string>
+    <string name="creat_service">Create Service</string>
+    <string name="edit_service">Edit Service</string>
+    <string name="other_items_creation">Other Items Creation</string>
+    <string name="other_items_creation_box">A little bit of words y users need to create items.</string>
+    <string name="creat_item">Create Item</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="enter_shop_name">Press To Enter Shop Name</string>
+    <string name="enter_phone_number">Press To Enter Phone Number</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="enter_shop_address">Press To Enter Address</string>
+    <string name="shop_slogan">Shop Slogan</string>
+    <string name="enter_shop_slogan">Press To Enter Slogan</string>
+    <string name="set_up">Set Up</string>
+    <string name="shop_creation">Shop Creation</string>
+    <string name="car_type">Car Type</string>
+    <string name="select_car_type">Press To Select Vehicle Type</string>
+    <string name="service_type">Service Type</string>
+    <string name="enter_service_type">Press To Enter Sevice Type</string>
+    <string name="service_price">Service Price</string>
+    <string name="create">Create</string>
+    <string name="other_item_creation">Other Item Creation</string>
+    <string name="item">Item</string>
+    <string name="enter_item_type">Press To Enter Type</string>
+    <string name="price">Price</string>
+    <string name="enter_item_price">Press To Enter  Item Price</string>
+    <string name="enter_servie_price">Press To Enter Service Price</string>
+    <string name="tax">Tax</string>
+    <string name="service_edit">Service Edit</string>
+    <string name="editing">"Editing "</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="enter_service_for_edit">Enter Service For Edit</string>
+    <string name="enter_price_for_edit">Enter Price For Edit</string>
+    <string name="car_info">Car Information</string>
+    <string name="car_plate_num">"Car Number Plate "</string>
+    <string name="car_wash">Car Wash</string>
+    <string name="car_interior">Car Interior Cleaning</string>
+    <string name="other_items">Other Items</string>
+    <string name="total">Total</string>
+    <string name="expense_data">ExpenseData</string>
+    <string name="checkout">Checkout</string>
+    <string name="expense_checkout">Expense Checkout</string>
+    <string name="small_car">Small Car</string>
+    <string name="Item_list">Item List</string>
+    <string name="medium_car">Medium Car</string>
+    <string name="suv_car">SUV Car</string>
+    <string name="input_data">Input Data</string>
+    <string name="service_list">Service List</string>
 
+    <string name="sign_out">Sign Out</string>
+
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- no need to translate && related to authentication-->
+    <string name="login_api_url">https://yangonianstech.com/api/auth/sign_in</string>
+    <string name="create_user_url">https://yangonianstech.com/api/auth/sign_up</string>
+
+
+    <!--car type array list-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Car Wash</string>
+    <string name="nav_header_subtitle">carwash@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_signout">Sign Out</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_input_data">Input Data</string>
+    <string name="menu_expense_records">Expense Records</string>
+    <string name="menu_income_records">Income Records</string>
+    <string name="menu_car_number_record">Car Number Records</string>
+    <string name="menu_input_expense">Input Expense</string>
+    <string name="menu_shop_info">Shop Info</string>
+
+
+    <string name="other_items_list">Other Items List</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="car_type_arrays">
+        <item>@string/small_car</item>
+        <item>@string/medium_car</item>
+        <item>@string/suv_car</item>
+        <item>@string/large_car</item>
+        <item>@string/cycle</item>
+        <item>@string/bus</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="choose_date_arrays">
+        <item>@string/daily</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+        <item>@string/yearly</item>
+
+
+    </string-array>
+
+
+    <string name="text_with_paragraphs">
+        Date$Time  &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;2.1.2020,2:00 \nCar number &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;8M/8888
+        \nVehicle    &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;SUV
+        \nPackages  &#160; &#160; &#160; &#160; &#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160; &#160; &#160; &#160;Car Wash
+
+    </string>
+    <string name="user_name">Name</string>
+    <string name="manager_creation">Manager Creation</string>
+    <string name="create_manager">Create Manager</string>
+    <string name="edit_manager">Edit Manager</string>
+    <string name="service_name">Service Name</string>
+    <string name="remark">*Remark</string>
+    <string name="electric">Electric Fees</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="submit">Submit</string>
+    <string name="thank_you">Thank You</string>
+    <string name="add_manager">Add Manager Account</string>
+    <string name="large_car">Large Car</string>
+    <string name="cycle">Cycle</string>
+    <string name="bus">Bus</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="weekly">Weekly</string>
+    <string name="search">Search</string>
+    <string name="today_data">"Today data "</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="k20">K 2000,000</string>
+    <string name="date_">16/8/2020</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fir</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
 
 </resources>

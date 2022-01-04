@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".GettingStartActivity">
+
+    <ImageView
+        android:id="@+id/splashlogo"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/auto_fm_logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <Button
+        android:id="@+id/splashbtm"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/splashlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-164dp"
+        android:background="@drawable/rounded_buttom"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/segoeui" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by The CoCoLoCo Team"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+        />
+
+
+</RelativeLayout>

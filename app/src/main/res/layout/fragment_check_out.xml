@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inputdata.CheckoutFragment">
+
+    <EditText
+        android:id="@+id/edtextServiceType4"
+        android:layout_width="340dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_line"
+        android:gravity="center_horizontal"
+        android:hint="@string/remark"
+        android:inputType="textEmailSubject"
+        android:maxLength="30"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:fontFamily="@font/pyidaungsu_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome22"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome22"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="start"
+        android:text="1000MMK"
+        android:inputType="textEmailSubject"
+        android:maxLength="50"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome12"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="@string/total"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome18"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="6%"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome20"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome16"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="1000MMK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn7"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome17"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/tax"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome20"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome20"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/car_interior"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn7"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/btmedit6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome20"
+        app:srcCompat="@drawable/edit_png" />
+
+    <ImageButton
+        android:id="@+id/btmedit5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn7"
+        app:srcCompat="@drawable/edit_png" />
+
+    <TextView
+        android:id="@+id/textWelcome11"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="1000MMK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome19"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/btmedit3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome19"
+        app:srcCompat="@drawable/edit_png" />
+
+    <TextView
+        android:id="@+id/textWelcome6"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="1000MMK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn5"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/btmedit2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn5"
+        app:srcCompat="@drawable/edit_png" />
+
+    <TextView
+        android:id="@+id/textWelcome13"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="1000MMK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome15"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/btmedit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmedit1"
+        app:srcCompat="@drawable/edit_png" />
+
+    <TextView
+        android:id="@+id/textWelcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/car_plate_num"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_car_info_1"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/line2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="335dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#707070"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome17" />
+
+    <Button
+        android:id="@+id/btmSetUp"
+        android:layout_width="251dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_buttom"
+        android:ellipsize="none"
+        android:text="@string/checkout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/pyidaungsu_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtextServiceType4" />
+
+    <TextView
+        android:id="@+id/textforSignIn5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/car_type"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome2"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textforSignIn7"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="@string/other_items"
+        app:fontFamily="@font/segoeui"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome21"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome19"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/car_interior"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn5"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textWelcome21"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/welcome_to"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome19"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/text_car_info_1"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/car_plate_num"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn13"
+        tools:ignore="RtlCompat" />
+
+    <ImageButton
+        android:id="@+id/btmedit1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn13"
+        app:srcCompat="@drawable/edit_png" />
+
+    <TextView
+        android:id="@+id/textWelcome15"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="1000MMK"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textforSignIn13"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textforSignIn13"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        android:gravity="center_horizontal"
+        android:text="@string/car_info"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/segoeui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
